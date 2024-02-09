@@ -3,10 +3,25 @@
   "version": "1.0.0",
   "description": "Generate RISC-V assembly music code from MIDI files.",
   "main": "dist/index.js",
+  "bin": {
+    "midi2riscv": "dist/index.js"
+  },
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/North-West-Wind/midi2riscv.git"
+  },
+  "bugs": {
+    "url": "https://github.com/North-West-Wind/midi2riscv/issues"
+  },
+  "homepage": "https://github.com/North-West-Wind/midi2riscv#readme",
   "keywords": [
     "midi",
     "riscv",
