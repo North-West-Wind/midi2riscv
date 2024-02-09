@@ -1,0 +1,24 @@
+{
+  "name": "midi2riscv",
+  "version": "1.0.0",
+  "description": "Generate RISC-V assembly music code from MIDI files.",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "midi",
+    "riscv",
+    "assembly"
+  ],
+  "author": "NorthWestWind",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "midi-file": "^1.2.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.17",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
