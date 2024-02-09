@@ -22,7 +22,7 @@ const outPath = process.argv[3];
 
 const input = fs.readFileSync(inPath);
 const parsed = midiManager.parseMidi(input);
-// fs.writeFileSync("midi.json", JSON.stringify(parsed, null, 2));
+fs.writeFileSync("midi.json", JSON.stringify(parsed, null, 2));
 
 let code = ".text";
 
@@ -58,7 +58,7 @@ for (const track of parsed.tracks) {
 			while (tempoIndex + 1 < tempoEvents.length && tempoEvents[tempoIndex+1].time < totalTime) {
 				tempoIndex++;
 			}
-			note.duration = Math.round(note.duration * tempoEvents[tempoIndex].multiplier);
+			note.duration = Math.round((note.duration + 1) * tempoEvents[tempoIndex].multiplier);
 			const existing = events.find(e => e.time == totalTime);
 			if (existing) existing.notes.push(note);
 			else events.push({

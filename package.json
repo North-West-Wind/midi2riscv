@@ -4,7 +4,8 @@
   "description": "Generate RISC-V assembly music code from MIDI files.",
   "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
   },
   "keywords": [
     "midi",
