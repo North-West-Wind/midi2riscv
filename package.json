@@ -1,7 +1,7 @@
 {
   "name": "midi2riscv",
   "version": "1.0.0",
-  "description": "Generate RISC-V assembly music code from MIDI files.",
+  "description": "Generate RISC-V assembly code for playing music in RARS from MIDI files.",
   "main": "dist/index.js",
   "bin": {
     "midi2riscv": "dist/index.js"
